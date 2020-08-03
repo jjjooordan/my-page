@@ -1,3 +1,11 @@
+PORTFOLIO by Jordan
+
+This is my portfolio page, created with the generous help of HTML5 UP, Unsplash, and
+the CC0 (public domain) community.
+
+
+From the team at HTML5 UP:
+
 Forty by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
