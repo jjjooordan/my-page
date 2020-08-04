@@ -31,11 +31,7 @@
 						<ul class="links">
 							<li><a href="index.html">Home</a></li>
 							<li><a href="product.html">Product Management</a></li>
-							<li><a href="product.html#project-imdb">Project: Box Office Multiples</a></li>
-							<li><a href="generic.html">Engineering</a></li>
-							<li><a href="landing.html">Project: Box Office Cloud DB</a></li>
-							<li><a href="elements.html">After Hours</a></li>
-							<li><a href="elements.html">Project: Going for a Stroll</a></li>
+							<li><a href="product.html#project-imdb">Project: Box Office Scraper</a></li>
 						</ul>
 					</nav>
 
@@ -44,7 +40,7 @@
 					<section id="banner" class="style2">
 						<div class="inner">
 							<span class="image">
-								<img src="images/pic07.jpg" alt="" />
+								<img src="images/pic07.jpg" alt=""/>
 							</span>
 							<header class="major">
 								<h1>Product Management</h1>
@@ -58,7 +54,6 @@
 
 				<!-- Main -->
 					<div id="main">
-
 						<!-- One -->
 							<section id="one">
 								<div class="inner">
@@ -68,54 +63,60 @@
 									<p>My favorite definition for Product Management begins with a <a href="https://medium.com/@tworetzky/what-does-a-product-manager-do-205b40d82da3">Medium article</a> by Brent Tworetzky.  He eloquently summarized it as the combination of <i>Strategy</i>, <i>Execution</i>, and <i>User Understanding</i>.  While the role may vary by organization, I wholeheartedly agree that these are the three key perspectives every Product Manager has to exercise.  However, I advocate for an even stronger emphasis on the user, in reference to visionaries like Steve Jobs and Jeff Bezos who characterize their customer focus as empathy and even obsession.</p>
 								</div>
 							</section>
-
+							<div id="project-imdb" class="alt"></div>
 						<!-- Two -->
 							<section id="two" class="spotlights">
 								<section>
 									<a href="https://github.com/jjjooordan/IMDB-boxoffice-scraper" class="image">
-										<img src="images/pic08.jpg" alt="" data-position="center center" />
+										<!-- Credit: https://unsplash.com/photos/6Nbo9Pn0yJA -->
+										<img src="images/pic13.jpg" alt="" data-position="center center" />
 									</a>
 									<div class="content">
 										<div class="inner">
 											<header class="major">
-												<h3>Project: Box Office Multiples</h3>
+												<h2>Project: Box Office Scraper</h2>
+											</header>
+											<header class="major">
+												<h3>My Motivation</h3>
 											</header>
 											<p>I love movies.  I even love listening to <a href="https://www.theringer.com/the-rewatchables">others talk about movies</a>.  Despite how much fun going to the theater can be, Hollywood is a business, and I created these tools to help visualize that.</p>
 											<p>My project was a method of applying my Python, Google Cloud Platform, and data analytics learning.  While I wouldn't recommend using these tools to set an upcoming film's budget, I would recommend using them to provide the quantitative support you need when arguing who is the biggest star in Hollywood!</p>
 											<ul class="actions">
-												<li><a href="https://github.com/jjjooordan/IMDB-boxoffice-scraper" class="button">Learn more</a></li>
+												<li><a href="https://github.com/jjjooordan/IMDB-boxoffice-scraper" class="button">GitHub Repository</a></li>
 											</ul>
 										</div>
 									</div>
 								</section>
 								<section>
 									<a href="https://github.com/jjjooordan/IMDB-boxoffice-scraper" class="image">
-										<img src="images/pic09.jpg" alt="" data-position="top center" />
+										<!-- Credit: https://unsplash.com/photos/J39X2xX_8CQ -->
+										<img src="images/pic12.jpg" alt="" data-position="top center" />
 									</a>
 									<div class="content">
 										<div class="inner">
 											<header class="major">
-												<h3>IMDB_Film_Data.py</h3>
+												<h3>Getting Film Data</h3>
 											</header>
 											<p>This Python function processes IMDB film URLs to gather IMDB rating, budget, and box office data.  All budget and box office data is converted to US dollars.  It is designed to be used in combination with my IMDB filmography function.</p>
 											<ul class="actions">
-												<li><a href="https://github.com/jjjooordan/IMDB-boxoffice-scraper" class="button">Learn more</a></li>
+												<li><a href="https://github.com/jjjooordan/IMDB-boxoffice-scraper" class="button">IMDB_Film_Data.py</a></li>
 											</ul>
 										</div>
 									</div>
 								</section>
 								<section>
 									<a href="https://github.com/jjjooordan/IMDB-boxoffice-scraper" class="image">
-										<img src="images/pic10.jpg" alt="" data-position="25% 25%" />
+										<!-- Credit: https://unsplash.com/photos/tV80374iytg -->
+										<img src="images/pic14.jpg" alt="" data-position="25% 25%" />
 									</a>
 									<div class="content">
 										<div class="inner">
 											<header class="major">
-												<h3>IMDB_Filmo_Scraper.py</h3>
+												<h3>Getting Filmography Data</h3>
 											</header>
 											<p>This Python function processes IMDB actor URLs to gather and process an actor's filmography, where he or she has been credited as an actor or actress, then passes each film URL to the IMDB_Film_Data.py function.  A DataFrame with all pertinent data is returned when executed.</p>
 											<ul class="actions">
-												<li><a href="https://github.com/jjjooordan/IMDB-boxoffice-scraper" class="button">Learn more</a></li>
+												<li><a href="https://github.com/jjjooordan/IMDB-boxoffice-scraper" class="button">IMDB_Filmo_Scraper.py</a></li>
 											</ul>
 										</div>
 									</div>
@@ -126,11 +127,11 @@
 							<section id="three">
 								<div class="inner">
 									<header class="major">
-										<h2>IMDB_Upload.py</h2>
+										<h3>Storing the Data</h3>
 									</header>
 									<p>This Python script executes the IMDB_Filmo_Scraper.py function to generate an actor or actress's table of filmography data, and uploads the information to a Google Cloud Platform Postgres database.  This database is then used for visualizations and analytics.</p>
 									<ul class="actions">
-										<li><a href="generic.html" class="button next">Learn more</a></li>
+										<li><a href="generic.html" class="button next">IMDB_Upload.py</a></li>
 									</ul>
 								</div>
 							</section>
